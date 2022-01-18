@@ -5,20 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello!</title>
+    <head>
+        <style>
+          .multicoloredtext 
+          {
+            background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          }
+        </style>
+      </head>
+
+    <title> Home Page </title>
 
   </head>  
-  <body>    
-    
-    <h1 style="background-color: #FF0000"> My first Hello World HTML! </h1>
-    <p> Hello World! </p>
-    <p> This page was last updated on:
-      <script>
-        <!-- Hiding script starts here
-        document.write(document.lastModified);
-        // Stop hiding script here -->
-      </script>
-    </p>
+  <body>
+      <header> 
+          <h1 style="text-align: center; background-color:#FF0000;"> Home Page </h1>
+      </header>
+
+      <!-- This is the navigation of my site -->
+      <nav>
+          <p style="text-align: center; color:blue; font-family: courier"> <a href="http://127.0.0.1:3000/index.html"> HOME</a> | <a href="http://127.0.0.1:3000/aboutMe.html"> ABOUT ME</a> | <a href="https://mr-sir2525.github.io/webdev/"> ANDREWS WEBPAGE</a> </p>
+      </nav>
+
+      <article>
+          <header>
+              <h2>  </h2>
+          </header>
+
+        <section>
+            <header>
+                
+            </header>
+            <p style="margin-left: 2em">  </p>
+        </section>
+
+        <section>
+            <header>
+                
+            </header>
+            <p style="margin-left: 2em">  </p>
+        </section>
+
+        <section>
+            <header> 
+                <h3> Click the button... </h3> 
+            </header>
+            <button style="background-color:#ffffff;" onclick="alert('Congrats you clicked a rainbow button')"> <span class="multicoloredtext"> Click Me! </span> </button>
+        </section>
+
+        <section>
+            <header>
+                <h3> Current date and time: </h3>
+                <script>
+                    // create a variable
+                    currentDateTime = new Date();
+                    // variables to hold the string representation of the current date
+                    localTime = currentDateTime.toString();
+                    uniTime = currentDateTime.toGMTString();
+                    
+                    // write the time on the webpage
+                    document.write("<p> <strong> Local date/time: </strong>" + localTime + "</p>");
+                    document.write("<p> <strong> Universal date/time: </strong>" + uniTime + "</p>");
+
+                    hours = currentDateTime.getHours(); // grabs the hours, minutes, and seconds from the current date and time
+                    minutes = currentDateTime.getMinutes();
+                    seconds = currentDateTime.getSeconds();
+                    milliseconds = currentDateTime.getMilliseconds();
+
+                    document.write("<p> <strong> Local time (simplified): </strong>" + hours + ":" + minutes + ":" + seconds + ":" + milliseconds); // displays these values in time format
+                    
+                </script>
+            </header>
+        </section>
+
+      </article>
+
+      <hr />
+      <footer> Copyright &copy; Grey Chapman 2021 </footer>
     
   </body>
   </html>
