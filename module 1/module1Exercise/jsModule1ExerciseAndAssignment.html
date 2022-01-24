@@ -1,0 +1,98 @@
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+       Student Name: Carson Grey Chapman
+       Date: 1-19-22
+       Module 1 Assignment
+       Assignment purpose/description: Create a webpage containing the 3 provided requirements
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <head>
+      <style>
+        .multicoloredtext 
+        {
+            background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        h1 
+        {
+          font-family: "Comic Sans MS", "Comic Sans", cursive;
+        }
+      </style>
+    </head>
+
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center; background-color: red;"> Home Page </h1>
+    </header>
+
+    <!-- This is the navigation of my site -->
+    <nav>
+      <p style="text-align: center; color: blue; font-family: courier">
+        <a href="index.html"> HOME</a> | <a href="aboutMe.html"> ABOUT ME</a> |
+        <a href="https://mr-sir2525.github.io/webdev/"> ANDREWS WEBPAGE</a>
+      </p>
+    </nav>
+
+    <article>
+      <header>
+        <h2> This is a work in progress Home Page. 
+          Check below for the current date/time or above to learn more about me!</h2>
+      </header>
+
+      <p> <a href="module 2/module2Exercise/index.html"> Exercises </a> </p>
+      <p> <a href="https://github.com/TheGravvytrain/webdev"> Github Main Page </a> </p>
+
+      <script src="https://code.jquery.com/jquery-latest.min.js"> </script>
+      <script src="dateTime.js"> </script>
+
+      <section>
+        <header>
+          <h3>Click the button for the current date/time.</h3>
+        </header>
+        <button type = "button"; style="background-color: #ffffff" onclick="document.getElementById('dt').innerHTML = getTime()"> <span class="multicoloredtext"> Click Me! </span> </button>
+        <p id = "dt"> </p>
+      </section>
+
+      <section>
+        <header>
+          <h3>Current date and time:</h3>
+          <script>
+            // create a variable
+            currentDateTime = new Date();
+            // variables to hold the string representation of the current date
+            localTime = currentDateTime.toString();
+            uniTime = currentDateTime.toGMTString();
+
+            // write the time on the webpage
+            document.write("<p> <strong> Local date/time: </strong>" + localTime + "</p>");
+            document.write("<p> <strong> Universal date/time: </strong>" + uniTime + "</p>");
+
+            hours = currentDateTime.getHours(); // grabs the hours, minutes, and seconds from the current date and time
+            minutes = currentDateTime.getMinutes();
+            seconds = currentDateTime.getSeconds();
+            milliseconds = currentDateTime.getMilliseconds();
+
+            document.write("<p> <strong> Local time (simplified): </strong>" +hours +":" +minutes +":" +seconds +":" +milliseconds); // displays these values in time format
+          </script>
+        </header>
+      </section>
+    </article>
+
+    <hr />
+    <footer> <script> document.write("     Last modified: " + document.lastModified) </script> </footer>
+  </body>
+</html>
+
+<!-- This is my "cover page" of sorts. I decided to keep this page with the assignment since I liked the way it flowed.
+The "About Me" page is what could be considered my "index" page. I hope this is alright! -->
