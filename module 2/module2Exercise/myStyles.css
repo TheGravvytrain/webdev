@@ -1,4 +1,76 @@
-/*Your style will go here*/
-body{
-    background-color: darkgray;
+/* Your style will go here
+body
+{
+    background-color: cornsilk;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+
+p
+{
+    font-size: 12pt;
+    color: rgb(0, 0, 0)
+}
+
+h1
+{
+    color: tomato;
+    font-weight: bolder;
+}
+
+h2
+{
+    color: coral;
+    background-image: linear-gradient(to left, rgb(183, 235, 229), rgb(255, 255, 255));
+}
+
+.wordStyles
+{
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.multicoloredtext 
+{
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+} */
+
+
+
+/* The following styles are for fule listings6_2 */
+.rightAlign
+{
+    text-align: right;
+}
+
+.centerAlign
+{
+    text-align: center;
+}
+
+.leftAlign
+{
+    text-align: left;
+}
+
+#pageHeader
+{
+    text-transform: uppercase;
+    color: blueviolet;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#tableHeader
+{
+    color: rgb(226, 43, 134);
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+    background-color: cornsilk;
+    border: 2px black solid;
+}
+
