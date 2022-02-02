@@ -11,90 +11,65 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/webdev/styles/indexStyles.css">
 
-    <head>
-      <style>
-        .multicoloredtext 
-        {
-            background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        h1 
-        {
-          font-family: "Comic Sans MS", "Comic Sans", cursive;
-        }
-      </style>
-    </head>
-
+  <head>
     <title>Home Page</title>
   </head>
   <body>
     <header>
-      <h1 style="text-align: center; background-color: red;"> Home Page </h1>
+      <h1> Home Page </h1>
     </header>
 
     <!-- This is the navigation of my site -->
     <nav>
-      <p style="text-align: center; color: blue; font-family: courier">
-        <a href="index.html"> HOME</a> | <a href="aboutMe.html"> ABOUT ME</a> |
+      <p class="navLinks">
+        <a href="https://thegravvytrain.github.io/webdev/"> HOME</a> | <a href="module 1/module1Assignment/aboutMe.html"> ABOUT ME</a> |
         <a href="https://mr-sir2525.github.io/webdev/"> ANDREWS WEBPAGE</a>
       </p>
     </nav>
 
     <article>
       <header>
-        <h2> UNDER CONSTRUCTION ----------- UNDER CONSTRUCTION ---------- UNDER CONSTRUCTION ---------- UNDER CONSTRUCTION</h2>
-        <h3> In the meantime... here is a cool rainbow button and the date and time in several formats. Please click the "About Me" link above to learn more about me!</h3>
+        <h2> Welcome to my home page! This page will alter as I continute learning more about HTML, tag along to see my progress!:)</h2>
       </header>
 
-      <section>
-        <header>
-          <h3>Click the button...</h3>
-        </header>
-        <button
-          style="background-color: #ffffff"
-          onclick="alert('Congrats you clicked a rainbow button')"
-        >
-          <span class="multicoloredtext"> Click Me! </span>
-        </button>
+      <section> 
+        <aside class="rightAlignedAside"> 
+          This is my content that I am supposed to align to the right side of the page.
+          If I'm being completely honest, I'm not a fan of right aligning text in the slightest.
+          I mean, centered text is super clean and left-align text just makes sense (we read from left to right).
+          The only acceptable instance of right aligned text, in my opinion, is for an aside.
+          Well, I guess I have to make sacrafices for that A+... heres your right aligned text as an aside.
+        </aside>
       </section>
 
-      <section>
-        <header>
-          <h3>Current date and time:</h3>
-          <script>
-            // create a variable
-            currentDateTime = new Date();
-            // variables to hold the string representation of the current date
-            localTime = currentDateTime.toString();
-            uniTime = currentDateTime.toGMTString();
-
-            // write the time on the webpage
-            document.write(
-              "<p> <strong> Local date/time: </strong>" + localTime + "</p>"
-            );
-            document.write(
-              "<p> <strong> Universal date/time: </strong>" + uniTime + "</p>"
-            );
-
-            hours = currentDateTime.getHours(); // grabs the hours, minutes, and seconds from the current date and time
-            minutes = currentDateTime.getMinutes();
-            seconds = currentDateTime.getSeconds();
-            milliseconds = currentDateTime.getMilliseconds();
-
-            document.write("<p> <strong> Local time (simplified): </strong>" +hours +":" +minutes +":" +seconds +":" +milliseconds); // displays these values in time format
-          </script>
-        </header>
+      <section class="img">
+        <p>
+          <img src="riley.jpg" style="border: 1px solid black; width: 256px; height: 144px;" alt="My dog Riley.">
+          <img src="remy.jpg" style="border: 1px solid black; width: 256px; height: 144px;" alt="My bird Remy.">
+          <img src="whiskey.jfif" style="border: 1px solid black; width: 256px; height: 144px;" alt="My other dog Whiskey.">
+        </p>
       </section>
+
+      <section class="threeColumn">
+        <p>
+          hello
+        </p>
+        <p>
+          hello
+        </p>
+        <p>
+          hello
+        </p>
+      </section>
+
+      <p> <a href="module 2/module2Exercise/index.html"> Exercises </a> </p>
+      <p> <a href="https://github.com/TheGravvytrain/webdev"> Github Main Page </a> </p>
+
     </article>
 
     <hr />
-    <footer>Copyright &copy; Grey Chapman 2021</footer>
+    <footer> <script> document.write("Last modified: " + document.lastModified) </script> </footer>
   </body>
 </html>
-
-<!-- This is my "cover page" of sorts. I decided to keep this page with the assignment since I liked the way it flowed.
-The "About Me" page is what could be considered my "index" page. I hope this is alright! -->
