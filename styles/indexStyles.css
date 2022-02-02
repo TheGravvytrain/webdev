@@ -1,0 +1,69 @@
+h1 
+{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+    background-image: radial-gradient(rgb(240, 151, 221), rgb(255, 255, 255));
+    color:rgba(24, 129, 77, 0.623)
+}
+
+h2
+{
+    font-family:monospace;
+    text-align: center;
+    font-size: 16pt;
+}
+
+table, tr, th, td 
+{
+    border: 1px solid black; border-collapse: collapse; padding: 3px;
+}
+
+.multicoloredtext 
+{
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.navLinks
+{
+    text-align: center; 
+    color: blue; 
+    font-family: courier;
+}
+
+.rightAlignedAside
+{
+    float: right;
+    width: 20%;
+    color:rgb(255, 255, 255);
+    padding: .5em;
+    margin-left: .5em;
+    text-align: right; /* right align being used as well as font-style, font-size, font-family, etc */
+    border: 2px outset rgb(0, 0, 0);
+    background-color: rgba(77, 129, 86, 0.623);
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: 10pt;
+}
+
+.threeColumn
+{
+  column-count: 3;
+  column-gap: 21px;
+  column-rule-width: 2px;
+  column-rule-style: solid;
+  column-rule-color: #000;
+}
+
+.img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 52%;
+    padding-left: 6em;
+    padding-right: 6em;
+}

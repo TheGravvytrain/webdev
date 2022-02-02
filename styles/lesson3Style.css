@@ -1,0 +1,13 @@
+h1 
+{
+  font-size: larger;
+  color: rgba(6, 1, 48, 0.404);
+  background-color: rgb(138, 43, 226);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 30pt;
+}
+
+body 
+{
+  display: inline-block;
+}

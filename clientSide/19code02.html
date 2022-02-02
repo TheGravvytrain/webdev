@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quotable Quotes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="random.js"></script>
+    <link rel="stylesheet" href="button.css">
+  </head>
+  <body>
+    <h1>Quotable Quotes</h1>
+    <p>
+      Following is a random quotable quote. To see a new quote just reload this
+      page.
+    </p>
+
+    <button type="button" onclick="document.innerHTML = getQuote()"> Click Me! </button>
+    <p id="quote"> </p>
+
+  </body>
+</html>
+
+<!-- style="background-color: #ffffff" -->
