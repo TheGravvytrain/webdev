@@ -1,0 +1,57 @@
+html
+{
+    background: url("/webdev/images/quizBackground.jpg") no-repeat center center fixed #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bottomRightImg
+{
+    width: 320px;
+    height: 240px;
+    margin-right: 20px;
+    margin-top: -30px;
+    border: 2px solid black;
+    float: right;
+}
+
+article
+{
+    padding-left: 25em;
+    margin-right: 25em;
+}
+
+a
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* a:link is a pseudo-class for the <a> tag */
+a
+{
+    color: forestgreen
+}
+
+a:visited
+{
+    color: mediumaquamarine
+}
+
+a:hover
+{
+    color: #7687f3
+}
+
+a:focus
+{
+    color: rgb(149, 76, 185)
+}
+
+a:active
+{
+    color: rgb(201, 90, 112)
+}
