@@ -1,0 +1,28 @@
+Quiz Study Guide
+====================================================================================================================
+
+1. Put the following on your page:
+    <a href="http://www.supercheapsuits.com/~billybob/">>Billy Bob's Site</a>
+
+2. Type this at the top of the page:
+    <a href="#credits">>About the Authors</a>
+
+    Type this at the beginning of the credits section:
+    <p id="credits">>Credits...</p>
+
+3. Type the following on your webpage:
+    <a href="mailto:bon@soir.com>goodnight greeting</a>
+
+4. The id attribute can be used on any HTML element as an anchor.
+
+5. You use the pound sign (#) to link to a named anchor point on the page.
+
+6. Use the attribute download to tell the browser the link target should be downloaded.
+
+7. You should include the http:// and the rest of the FQDN when you are linking to a page outside the current site.
+
+8. You must point to the email address the message is to. Optional values are subject, body, cc, and bcc.
+
+9. You should avoid forcing links to open in a new window at all costs.
+
+10. Use the a:visited pseudo-class to style visited links.
