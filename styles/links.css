@@ -1,0 +1,24 @@
+a
+{
+    color: rgb(20, 85, 204)
+}
+
+a:visited
+{
+    color: rgb(0, 184, 122)
+}
+
+a:hover
+{
+    color: #9ea357
+}
+
+a:focus
+{
+    color: rgb(149, 76, 185)
+}
+
+a:active
+{
+    color: rgb(201, 90, 112)
+}

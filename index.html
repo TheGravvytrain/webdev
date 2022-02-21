@@ -11,30 +11,34 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="stylesheet" href="/webdev/styles/indexStyles.css">
+    <link rel="stylesheet" href="/webdev/styles/links.css">
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="/webdev/clientSide/javascript/darkMode.js"></script>
 
   <head>
     <title>Home Page</title>
   </head>
   <body>
-    <header>
-      <h1> Home Page </h1>
-    </header>
+    <div id="bannerImage">
+      <header>
+        <h1> Home Page </h1>
+      </header>
 
-    <!-- This is the navigation of my site -->
-    <nav>
-      <p class="navLinks">
-        <button style="padding: 10px;"onclick="location.href='/webdev/index.html'">Home</button>
-        <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Assignment/myHobbies.html'">My Hobbies</button>
-        <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Assignment/myFamily.html'">My Family</button>
-        <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Assignment/gaming.html'">Gaming</button>
-        <button style="padding: 10px;"onclick="location.href='/webdev/module 2/module2Exercise/index.html'">Web Dev Module 2 Exercises</button>
-        <button style="padding: 10px;"onclick="location.href='/webdev/module 3/module3Exercise/index.html'">Web Dev Module 3 Exercises</button>
-        <button style="padding: 10px;"onclick="location.href='/webdev/clientSide/index.html'">JavaScript</button>
-        <button style="padding: 10px;"onclick="location.href='https://github.com/TheGravvytrain/webdev'"> Github Main Page</button>
-        <button style="padding: 10px;"onclick="location.href='https://mr-sir2525.github.io/webdev/'">Andrews Page</button>
-      </p>
-    </nav>
+      <!-- This is the navigation of my site -->
+      <nav>
+        <p class="navLinks">
+          <button style="padding: 10px;"onclick="location.href='/webdev/index.html'";rel="noreferer">Home</button>
+          <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Assignment/myHobbies.html'";rel="noreferer">My Hobbies</button>
+          <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Assignment/myFamily.html'";rel="noreferer">My Family</button>
+          <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Assignment/gaming.html'";rel="noreferer">Gaming</button>
+          <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Exercise/index.html'";rel="noreferer">Web Dev Exercises</button>
+          <button style="padding: 10px;"onclick="location.href='/webdev/clientSide/index.html'";rel="noreferer">JavaScript</button>
+          <button style="padding: 10px;"onclick="location.href='https://github.com/TheGravvytrain/webdev'";rel="noreferer"> Github Main Page</button>
+          <button style="padding: 10px;"onclick="location.href='https://mr-sir2525.github.io/webdev/'";rel="noreferer">Andrews Page</button>
+        </p>
+      </nav>
 
     <article>
       <header>
@@ -42,6 +46,7 @@
       </header>
       <section>
         <h2>Who Am I?</h2>
+    </div>
       <hr style="width: 100%; height: 1px; background-color: black" />
 
       <p style="text-align: center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
@@ -89,18 +94,18 @@
         </aside>
       </section>
 
-      <p><strong> Check out my Gaming page for my LIST of favorite games!! </strong></p>
+      <a href="#petTable">Click to See the Table Below About My Pets!</a>
 
       <section class="img">
         <div>
-          <img src="/webdev/images/riley.jpg" style="border: 1px solid black; width: 256px; height: 144px;" alt="My dog Riley.">
+          <a href="https://www.labradortraininghq.com/labrador-breed-information/german-shepherd-lab-mix/" target="_blank"><img src="/webdev/images/riley.jpg" style="border: 1px solid black; width: 256px; height: 144px;" alt="My dog Riley."></a>
           <img src="/webdev/images/remy.jpg" style="border: 1px solid black; width: 256px; height: 144px;" alt="My bird Remy.">
           <img src="/webdev/images/whiskey.jfif" style="border: 1px solid black; width: 256px; height: 144px;" alt="My other dog Whiskey.">
         </div>
       </section>
 
       <section class="table, tr, th, td">
-        <table>
+        <table id="petTable">
           <tr>
             <th style="width: 200px;">Name</th>
             <th style="width: 25px;">Breed</th>
@@ -130,14 +135,15 @@
           </tr>
         </table>
       </section>
-
-      <!-- <p> <a href="/webdev/module 2/module2Exercise/index.html"> Web Dev Exercises </a> </p>
-      <p> <a href="/webdev/clientSide/index.html"> JavaScript </a> </p>
-      <p> <a href="https://github.com/TheGravvytrain/webdev"> Github Main Page </a> </p> -->
-
+      <section>
+        <video width="320" height="240" controls>
+          <source src="/webdev/images/htmlVideo.mp4" type="video/mp4">
+      </section>
     </article>
 
     <hr />
+    <a href="mailto:carson.chapman.4@student.prcc.edu" title="This link is to my PRCC Email Address">Contact Me!</a> </br>
+    <a href="https://stackoverflow.com/"; target="_blank"; title="This link will take you to StackOverflow"> My Favorite Website!</a>
     <footer> <script> document.write("Last modified: " + document.lastModified) </script> </footer>
   </body>
 </html>
