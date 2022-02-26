@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quotable Quotes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      body
+      {
+          text-align: center;
+      }
+
+      .center 
+      {
+          margin: auto;
+          width: 50%;
+          border: 3px solid rgb(0, 0, 0);
+          padding: 10px;
+      }
+    </style>
+
+    <script src="/webdev/clientSide/javascript/randomJoke.js"></script>
+
+  </head>
+  <body>
+    <h1>Jokable Jokes</h1>
+    <p>
+      Following is a random Jokable Joke with a picture to add to the humor. For a new random joke and picture, just click the button!
+    </p>
+
+    <div class="center">
+      <button onclick="getRandomJoke(); getRandomImage()"> Click Me! </button>
+      <div id="joke"></div>
+      <img id="randImg"></img> </br>
+    </div>
+
+    Go back to <a href="/webdev/clientSide/index.html">home</a>
+
+  </body>
+</html>
