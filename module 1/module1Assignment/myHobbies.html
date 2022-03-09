@@ -13,7 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="/webdev/styles/indexStyles.css">
-    <link rel="stylesheet" href="/webdev/styles/links.css">
+    <!-- <link rel="stylesheet" href="/webdev/styles/links.css"> -->
+    <link rel="stylesheet" href="/webdev/styles/menu.css">
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <script src="/webdev/clientSide/javascript/darkMode.js"></script>
 
@@ -27,28 +28,41 @@
   </head>
 
   <body>
-    <div id="bannerImage">
-      <header>
-        <h1>My Hobbies</h1>
-      </header>
-
-      <nav>
-        <p class="navLinks">
-          <button style="padding: 10px;"onclick="location.href='/webdev/index.html'">Home</button>
-          <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Assignment/myHobbies.html'">My Hobbies</button>
-          <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Assignment/myFamily.html'">My Family</button>
-          <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Assignment/gaming.html'">Gaming</button>
-          <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Exercise/index.html'";rel="noreferer">Web Dev Exercises</button>
-          <button style="padding: 10px;"onclick="location.href='/webdev/clientSide/index.html'">JavaScript</button>
-          <button style="padding: 10px;"onclick="location.href='https://github.com/TheGravvytrain/webdev'"> Github Main Page</button>
-          <button style="padding: 10px;"onclick="location.href='https://mr-sir2525.github.io/webdev/'">Andrews Page</button>
-        </p>
-      </nav>
-
+    <div class="sticky">
+      <div id="bannerImage">
+        <header>
+          <h1>My Hobbies</h1>
+        </header>
+        <nav>
+          <ul class="menuUl">
+            <li class="menuLi"><a href="/webdev/index.html";rel="noreferer">Home</a></li>
+            <li class="menuLi"><a href="/webdev/module 1/module1Assignment/myHobbies.html">My Hobbies</a></li>
+            <li class="menuLi"><a href="/webdev/module 1/module1Assignment/myFamily.html">My Family</a></li>
+            <li class="menuLi"><a href="/webdev/module 1/module1Assignment/gaming.html">Gaming</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">WebDev Projects</a>
+              <div class="dropdown-content">
+                  <a href="/webdev/module 2/mod2Index.html">Module 2</a>
+                  <a href="/webdev/module 3/mod3Index.html">Module 3</a>
+                  <a href="/webdev/module 4/mod4Index.html">Module 4</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">JavaScript Projects</a>
+              <div class="dropdown-content">
+                <a href="/webdev/clientSide/module 2/scriptMod2Index.html">Module 2</a>
+                <a href="/webdev/clientSide/module 3/scriptMod3Index.html">Module 3</a>
+                <a href="/webdev/clientSide/module 4/scriptMod4Index.html">Module 4</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
       <header>
         <h2>Outdoor Hobbies...</h2>
       </header>
-    </div>
+
     <hr style="width: 100%; height: 1px; background-color: black" />
 
     <article>
@@ -133,6 +147,16 @@
         </ul>
       </section>
     </article>
+
+    <div id = "imgMap">
+      <img src="/webdev/images/darkSoulsCollage.jpeg" usemap="#image_map" style="width: 350px; isolation: unset;">
+      <map name="image_map">
+        <area shape="rect" coords="0,0,165,145" href="https://en.wikipedia.org/wiki/Dark_Souls" target="_blank" alt="Dark Souls I">
+        <area shape="rect" coords="167,147,400,0" href="https://en.wikipedia.org/wiki/Dark_Souls_II" target="_blank" alt="Dark Souls II">
+        <area shape="rect" coords="0,145,165,400" href="https://en.wikipedia.org/wiki/Dark_Souls_III" target="_blank" alt="Dark Souls III">
+        <area shape="rect" coords="165px,145px,400px,400px" href="https://en.bandainamcoent.eu/elden-ring/elden-ring" target="_blank" alt="Elden Ring">
+      </map>
+    </div>
     
   </body>
 </html>

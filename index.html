@@ -13,7 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="/webdev/styles/indexStyles.css">
-    <link rel="stylesheet" href="/webdev/styles/links.css">
+    <!-- <link rel="stylesheet" href="/webdev/styles/links.css"> -->
+    <link rel="stylesheet" href="/webdev/styles/menu.css">
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <script src="/webdev/clientSide/javascript/darkMode.js"></script>
 
@@ -21,31 +22,39 @@
     <title>Home Page</title>
   </head>
   <body>
-    <div id="bannerImage">
-      <header>
-        <h1> Home Page </h1>
-      </header>
+    <div class="sticky">
+      <div id="bannerImage">
+        <header>
+          <h1> Home Page </h1>
+        </header>
+        <nav>
+          <ul class="menuUl">
+            <li class="menuLi"><a href="/webdev/index.html";rel="noreferer">Home</a></li>
+            <li class="menuLi"><a href="/webdev/module 1/module1Assignment/myHobbies.html">My Hobbies</a></li>
+            <li class="menuLi"><a href="/webdev/module 1/module1Assignment/myFamily.html">My Family</a></li>
+            <li class="menuLi"><a href="/webdev/module 1/module1Assignment/gaming.html">Gaming</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">WebDev Projects</a>
+              <div class="dropdown-content">
+                  <a href="/webdev/module 2/mod2Index.html">Module 2</a>
+                  <a href="/webdev/module 3/mod3Index.html">Module 3</a>
+                  <a href="/webdev/module 4/mod4Index.html">Module 4</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">JavaScript Projects</a>
+              <div class="dropdown-content">
+                <a href="/webdev/clientSide/module 2/scriptMod2Index.html">Module 2</a>
+                <a href="/webdev/clientSide/module 3/scriptMod3Index.html">Module 3</a>
+                <a href="/webdev/clientSide/module 4/scriptMod4Index.html">Module 4</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
 
-      <!-- This is the navigation of my site -->
-      <nav>
-        <p class="navLinks">
-          <button style="padding: 10px;"onclick="location.href='/webdev/index.html'";rel="noreferer">Home</button>
-          <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Assignment/myHobbies.html'";rel="noreferer">My Hobbies</button>
-          <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Assignment/myFamily.html'";rel="noreferer">My Family</button>
-          <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Assignment/gaming.html'";rel="noreferer">Gaming</button>
-          <button style="padding: 10px;"onclick="location.href='/webdev/module 1/module1Exercise/index.html'";rel="noreferer">Web Dev Exercises</button>
-          <button style="padding: 10px;"onclick="location.href='/webdev/clientSide/index.html'";rel="noreferer">JavaScript</button>
-          <button style="padding: 10px;"onclick="location.href='https://github.com/TheGravvytrain/webdev'";rel="noreferer"> Github Main Page</button>
-          <button style="padding: 10px;"onclick="location.href='https://mr-sir2525.github.io/webdev/'";rel="noreferer">Andrews Page</button>
-        </p>
-      </nav>
-
-    <article>
-      <header>
-        <h2> Welcome to my home page! This page will alter as I continute learning more about HTML, tag along to see my progress!:)</h2>
-      </header>
-      <section>
-        <h2>Who Am I?</h2>
+      <article>
+        <section>
+      </div>
     </div>
       <hr style="width: 100%; height: 1px; background-color: black" />
 
@@ -84,57 +93,8 @@
       </p>
       </section>
 
-      <section> 
-        <aside class="rightAlignedAside"> 
-          This is my content that I am supposed to align to the right side of the page.
-          If I'm being completely honest, I'm not a fan of right aligning text in the slightest.
-          I mean, centered text is super clean and left-align text just makes sense (we read from left to right).
-          The only acceptable instance of right aligned text, in my opinion, is for an aside.
-          Well, I guess I have to make sacrafices for that A+... heres your right aligned text as an aside.
-        </aside>
-      </section>
+      <img id="watermark" src="/webdev/images/watermark.png" alt="watermark for andrew's webdev" style="margin-left: 3em; margin-top: -15em;">
 
-      <a href="#petTable">Click to See the Table Below About My Pets!</a>
-
-      <section class="img">
-        <div>
-          <a href="https://www.labradortraininghq.com/labrador-breed-information/german-shepherd-lab-mix/" target="_blank" title="Information about German Shepherd-Lab Mixes"><img src="/webdev/images/riley.jpg" style="border: 1px solid black; width: 256px; height: 144px;" alt="My dog Riley."></a>
-          <img src="/webdev/images/remy.jpg" style="border: 1px solid black; width: 256px; height: 144px;" alt="My bird Remy.">
-          <img src="/webdev/images/whiskey.jfif" style="border: 1px solid black; width: 256px; height: 144px;" alt="My other dog Whiskey.">
-        </div>
-      </section>
-
-      <section class="table, tr, th, td">
-        <table id="petTable">
-          <tr>
-            <th style="width: 200px;">Name</th>
-            <th style="width: 25px;">Breed</th>
-            <th style="width: 25px;">Age</th>
-            <th style="width: 25px;">Temperment</th>
-          </tr>
-
-          <tr>
-            <td>Riley</td>
-            <td>German Shepherd-Lab Mix</td>
-            <td>6 1/2 Years</td>
-            <td> Big sweetheart </td>
-          </tr>
-
-          <tr>
-            <td>Remy</td>
-            <td>Eclectus Parrot</td>
-            <td>11 Months</td>
-            <td> Kinda mean and bitey </td>
-          </tr>
-
-          <tr>
-            <td>Whiskey</td>
-            <td>German Shepherd</td>
-            <td>1 Year</td>
-            <td> Wild and playful</td>
-          </tr>
-        </table>
-      </section>
       <section>
         <video width="320" height="240" controls>
           <source src="/webdev/images/htmlVideo.mp4" type="video/mp4">
@@ -142,8 +102,8 @@
     </article>
 
     <hr />
-    <a href="mailto:carson.chapman.4@student.prcc.edu" title="This link is to my PRCC Email Address">Contact Me!</a> </br>
-    <a href="https://stackoverflow.com/"; target="_blank"; title="This link will take you to StackOverflow"> My Favorite Website!</a>
+    <a href="mailto:carson.chapman.4@student.prcc.edu" title="This link is to my PRCC Email Address">Contact Me!</a> </br> </br>
+    <a href="https://stackoverflow.com/"; target="_blank"; title="This link will take you to StackOverflow"> My Favorite Website!</a> </br> </br>
     <footer> <script> document.write("Last modified: " + document.lastModified) </script> </footer>
   </body>
 </html>

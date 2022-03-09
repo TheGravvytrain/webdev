@@ -1,0 +1,206 @@
+div 
+{
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  border: 5px solid #000;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+div#d1 
+{
+  background-color: red;
+  border: solid black 5pt;
+}
+div#d2 
+{
+  background-color: green;
+  margin-left: 20em;
+  /* margin-top: -109px; */
+  padding: 10px 15px 20px 25px
+}
+div#d3 
+{
+  background-color: blue;
+  margin-left: 40em;
+  /* margin-top: -109px; */
+  border: solid red 3pt;
+}
+div#d4 
+{
+  background-color: yellow;
+  margin-left: 60em;
+  /* margin-top: -109px; */
+  padding: 20px 22px 24px 26px;
+  overflow:auto
+}
+div#d5 
+{
+  background-color: red;
+  margin-top: 10em;
+  padding: 3px 6px 9px 12px
+}
+div#d6 
+{
+  background-color: green;
+  margin-left: 20em;
+  margin-top: 10em;
+  border: solid blue 10pt;
+  overflow: auto;
+}
+div#d7 
+{
+  background-color: blue;
+  margin-left: 40em;
+  margin-top: 10em;
+  padding: 10px 20px 30px 40px
+}
+div#d8 
+{
+  background-color: yellow;
+  margin-left: 65em;
+  margin-top: 10em;
+  border: solid green 1pt;
+}
+
+
+
+div#d9
+{
+    background-color: red;
+    left: 0px;
+    top: 0px;
+}
+div#d10
+{
+    background-color: green;
+    left: 16em;
+    top: 0px;
+}
+div#d11
+{
+    background-color: blue;
+    left: 0em;
+    top: 107px;
+}
+div#d12
+{
+    background-color: yellow;
+    left: 16em;
+    top: 107px;
+}
+div#d13
+{
+    background-image: url('/webdev/images/remy.jpg');
+    background-size: 250px 100px;
+    left: 0em;
+    top: 214px;
+}
+div#d14
+{
+    background-image: url('/webdev/images/riley.jpg');
+    background-size: 250px 100px;
+    left: 16em;
+    top: 214px;
+}
+div#d15
+{
+    background-image: url('/webdev/images/whiskey.jfif');
+    background-size: 250px 100px;
+    left: 0em;
+    top: 320px;
+}
+div#d16
+{
+    background-image: url('/webdev/images/helloWorldInHTML.jpg');
+    background-size: 250px 100px;
+    left: 16em;
+    top: 320px;
+}
+
+
+
+body {
+  font: 12pt Verdana, Arial, Georgia, sans-serif;
+}
+nav {
+  width: 150px;
+  float: left;
+  margin-top: 12px;
+  margin-right: 18px;
+}
+section {
+  width: 550px;
+  float: left;
+}
+nav a {
+  text-decoration: none;
+}
+section a {
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  margin: 12px 0px 0px 0px;
+  padding: 0px;
+}
+nav ul li {
+  border-bottom: 1px solid #ffffff;
+}
+nav ul li a:link, nav ul li a:visited {
+  font-size: 10pt;
+  font-weight: bold;
+  display: block;
+  padding: 3px 0px 3px 3px;
+  background-color: #628794;
+  color: #ffffff;
+}
+nav ul li a:hover, nav ul li a:active {
+  font-size: 10pt;
+  font-weight: bold;
+  display: block;
+  padding: 3px 0px 3px 3px;
+  background-color: #c1a02e;
+  color: #000000;
+}
+nav ul ul {
+  margin: 0px;
+  padding: 0px;
+}
+nav ul ul li {
+  border-bottom: none;
+}
+nav ul ul li a:link, nav ul ul li a:visited {
+  font-size: 8pt;
+  font-weight: bold;
+  display: block;
+  padding: 3px 0px 3px 18px;
+  background-color: #628794;
+  color: #ffffff;
+}
+nav ul ul li a:hover, nav ul ul li a:active {
+  font-size: 8pt;
+  font-weight: bold;
+  display: block;
+  padding: 3px 0px 3px 18px;
+  background-color: #c1a02e;
+  color: #000000;
+}
+nav ul ul ul li a:link, nav ul ul ul li a:visited {
+  font-size: 6pt;
+  font-weight: bold;
+  display: block;
+  padding: 3px 0px 3px 40px;
+  background-color: #628794;
+  color: #ffffff;
+}
+nav ul ul ul li a:hover, nav ul ul ul li a:active {
+  font-size: 6pt;
+  font-weight: bold;
+  display: block;
+  padding: 3px 0px 3px 40px;
+  background-color: #c1a02e;
+  color: #000000;
+}
