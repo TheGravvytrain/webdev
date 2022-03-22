@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+
+    <script src="/webdev/clientSide/javascript/guessingGame.js"></script>
+
+</head>
+<body>
+    <h1> Number Guessing Game</h1>
+    <h3 id="guessesRemaining"> Enter a number 0-10. You have 10 attempts remaining.</h3>
+    <div class="form">
+        <form name="guessForm" onclick="return false;">
+            <label for="guessField">Enter a guess:</label>
+            <input type = "text" id = "guessField" autofocus="autofocus">
+            <input type = "submit" class = "guessSubmit" value = "Submit guess" onclick="guessCheck()">
+        </form>
+    </br>
+        <input type = "submit" class = "guessSubmit" value = "New game" onclick="newGame()">
+    </div>
+
+    <p id="result"></p> 
+    <p id="tryAgain"></p> 
+</body>
+</html>
