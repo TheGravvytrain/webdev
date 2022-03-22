@@ -1,4 +1,4 @@
-var max = 10;
+var max = 100;
 var guessCount = 0;
 var guessesRemaining = 10;
 var randInt = Math.floor(Math.random() * max + 1);
