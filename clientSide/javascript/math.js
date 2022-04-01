@@ -24,7 +24,11 @@ function checkAnswer()
 }
 
 // another way to generate random numbers
-// function randomNumGenerator()
-// {
-//     x = Math.floor(Math.random() * 10);
-// }
+function randomNumGenerator()
+{
+    x = Math.floor(Math.random() * 10);
+    y = Math.floor(Math.random() * 10);
+
+    str = "What is " + x + " x " + y + "?";
+    document.getElementById("randNum").innerHTML = str;
+}
