@@ -11,10 +11,9 @@
 </head>
 <body>
     <h1> This is a math game in JavaScript! </h1>
-
-    <form id="myGame" name="myGame">
-        <span id="showMessage"></span>  
-        <span id="num1"></span> x <span id="num2"></span>
+    <span id="showMessage"></span>  
+    <span id="num1"></span> x <span id="num2"></span>
+    <form id="myGame" name="myGame" onsubmit="return false;">
         <input type="text" autofocus="autofocus" id="guessedNum">
         <input type="submit" id="submitAnswer" onclick="checkAnswer()">
         <p id="feedback"></p>

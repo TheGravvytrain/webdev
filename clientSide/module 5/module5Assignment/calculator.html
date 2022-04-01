@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/webdev/styles/calculatorStyles.css">
+    <script src="/webdev/clientSide/javascript/calculatorFunctions.js"></script>
+
+    <title>Tip Calculator</title>
+</head>
+  <div class="container">
+    <div class="title">
+      <h1>Tip Calculator</h1>
+    </div>
+      <div class="calculator">
+        <form style="margin-top: 18px">
+              <input id="billAmt" type="text" placeholder="Enter Bill $">
+        </br>
+        </br>
+              <input id="tipPercentage" type="text" placeholder="Enter Tip % (decimal)">
+        </form>
+        </br>
+      </div>
+
+      <div id="calcButton">
+        <button type="button" id="calcButton" onclick="calculateTip()">Calculate!</button>
+      </div>
+
+      <div id="tipAmt">
+        <p style="font-weight: bold; font-size: 14pt;">Tip Amount: <sup>$</sup>0.00</p>
+      </div>
+
+      <div id="totalAmt">
+          <p style="font-weight: bold; font-size: 14pt;">Total: <sup>$</sup>0.00</p>
+      </div>
+  </div>
+</body>
+</html>
