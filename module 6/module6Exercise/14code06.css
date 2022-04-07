@@ -1,0 +1,46 @@
+ul
+{
+    list-style-type: none;
+}
+ul li:nth-child(1)
+{
+    margin-left: 350px;
+}
+ul li:nth-child(2)
+{
+    margin-left: 90px;
+}
+ul li:nth-child(3)
+{
+    margin-top: 20px;
+    margin-left: 430px;
+}
+ul li:nth-child(4)
+{
+    margin-left: 100px;
+}
+ul li:nth-child(5)
+{
+    margin-left: 900px;
+}
+
+#img1
+{
+    transform: matrix(1, 2, 3, 4, 5, 6);
+}
+#img2
+{
+    transform: scale(2, 0.5);
+}
+#img3
+{
+    transform: skew(15deg, 20deg);
+}
+#img4
+{
+    transform: rotate(0.5turn);
+}
+#img5
+{
+    transform: translate(120px, 50%);
+}

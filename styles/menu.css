@@ -24,6 +24,7 @@ li a, .dropbtn
 li a:hover, .dropdown:hover .dropbtn 
 {
   background-color: rgba(80, 80, 80, 0.192);
+  transition: background-color .8s;
 }
 
 li.dropdown 
@@ -49,6 +50,15 @@ li.dropdown
   display: block;
   text-align: left;
 }
+.dropdown-content a:hover
+{
+  color: black;
+  padding-left: 25px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: padding .3s, background-color .8s;
+}
 
 .dropdown-content a:hover {background-color: #f1f1f1;}
 
@@ -61,4 +71,6 @@ li.dropdown
 {
   position: sticky;
   top: 0;
+  border: black 2pt;
+  border-radius: 50%;
 }
