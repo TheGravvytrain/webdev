@@ -1,3 +1,18 @@
+div
+{
+	border: black 2pt solid;
+	border-radius: 5%;
+	box-sizing: border-box;
+}
+
+.videoSection
+{
+	text-align: center;
+	background: url(/webdev/images/htmlVideo.mp4) center / cover no-repeat,
+				url(/webdev/images/moon.png) right top / 12% no-repeat,
+				linear-gradient(to top right, rgb(238, 146, 238), rgb(108, 172, 209));
+}
+
 .gridLayout
 {
     display: grid;
